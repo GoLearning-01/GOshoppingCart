@@ -11,6 +11,9 @@ pipeline {
                 echo 'Installing dependencies'
                 sh 'go version'
                 sh 'go get -u golang.org/x/lint/golint'
+                sh 'go get -u github.com/satori/go.uuid'
+                sh 'go get -u github.org/x/crypto/bcrypt'
+                
             }
         }
         
